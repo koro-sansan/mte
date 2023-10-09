@@ -47,6 +47,7 @@ CUDA_VISIBLE_DEVICES=0 python train.py  \
         --save_checkpoint_path=./ \
         --data_path=./data/iwslt_deen_ms_share/deen-l128-mindrecord
 ```
+
 ###测试
 python post_process.py
 
@@ -65,5 +66,4 @@ perl bleu.perl ./test.en.forbleu < ./output_eval.txt.forbleu
 perl bleu.perl ./test.it.forbleu < ./output_eval.txt.forbleu
 
 perl bleu.perl ./test.es.forbleu < ./output_eval.txt.forbleu
-
 
